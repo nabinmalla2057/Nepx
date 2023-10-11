@@ -1,3 +1,4 @@
+import "./App.css";
 import {
   BrowserRouter,
   RouterProvider,
@@ -27,6 +28,10 @@ export default function App() {
   return (
     <>
       <Navbar />
+      <main className="flex-shrink-0">
+        <div className="container"></div>
+        <RouterProvider router={router} />
+      </main>
       <RouterProvider router={router} />
       <Footer />
     </>
