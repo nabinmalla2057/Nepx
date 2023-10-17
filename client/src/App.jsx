@@ -1,13 +1,10 @@
 import "./App.css";
-import {
-  BrowserRouter,
-  RouterProvider,
-  createBrowserRouter,
-} from "react-router-dom";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Cart from "./pages/Cart";
 import Error from "./pages/Error";
 import Home from "./pages/Home";
 import Navbar from "./layouts/Navbar";
+import Footer from "./layouts/Footer"; // Import the Footer component
 
 const router = createBrowserRouter([
   {
