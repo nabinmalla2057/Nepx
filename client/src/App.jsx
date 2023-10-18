@@ -4,7 +4,7 @@ import Cart from "./pages/Cart";
 import Error from "./pages/Error";
 import Home from "./pages/Home";
 import Navbar from "./layouts/Navbar";
-import Footer from "./layouts/Footer"; // Import the Footer component
+import Footer from "./layouts/Footer";
 
 const router = createBrowserRouter([
   {
