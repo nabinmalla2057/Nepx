@@ -2,9 +2,10 @@ import "./App.css";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Cart from "./pages/Cart";
 import Error from "./pages/Error";
+import Footer from "./layouts/Footer";
 import Home from "./pages/Home";
 import Navbar from "./layouts/Navbar";
-import Footer from "./layouts/Footer";
+import ThemeSelector from "./layouts/ThemeSelector";
 
 const router = createBrowserRouter([
   {
@@ -24,13 +25,16 @@ const router = createBrowserRouter([
 export default function App() {
   return (
     <>
-      <Navbar />
-      <main className="flex-shrink-0">
-        <div className="container"></div>
+      <body className="d-flex flex-column h-100">
+        <ThemeSelector />
+        <Navbar />
+        <main className="flex-shrink-0">
+          <div className="container"></div>
+          <RouterProvider router={router} />
+        </main>
         <RouterProvider router={router} />
-      </main>
-      <RouterProvider router={router} />
-      <Footer />
+        <Footer />
+      </body>
     </>
   );
 }
